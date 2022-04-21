@@ -1,4 +1,4 @@
-Flask-RESTful Private API created by Fahad.
+Flask-RESTful Public API created by Fahad.
 
 API scope of work: Do CRUD operations for the notes app
 
