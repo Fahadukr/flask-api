@@ -34,7 +34,8 @@ def notes(note):
 
     except Exception:
         logger = open("log.txt", "a")
-        logger.write(f' \n \n DATE: {datetime.now().replace(microsecond=0)}: ---  ERROR in Flask API  ---')
+        logger.write(
+            f' \n \n DATE: {datetime.now().replace(microsecond=0)}: ---  ERROR in Flask API  ---')
         e_type, e_val, e_tb = sys.exc_info()
         traceback.print_exception(e_type, e_val, e_tb, file=logger)
         logger.close()
@@ -42,4 +43,4 @@ def notes(note):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(debug=False, host='0.0.0.0')
